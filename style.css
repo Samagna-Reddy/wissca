@@ -47,6 +47,7 @@ header .img {
     list-style: none;
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease;
 }
 .navbar li {
     margin: 0 10px;
@@ -60,6 +61,9 @@ header .img {
     text-transform: uppercase;
     border-radius: 20px;
     transition: all 0.3s ease;
+}
+.navbar a:hover {
+    background-color: #226ca0;
 }
 .toggle-button {
     display: none;
@@ -89,9 +93,9 @@ header .img {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 h1 {
-    -webkit-text-fill-color: #fff;
-    -webkit-text-stroke: 3px #fff;
-    font-family: Montserrat, sans-serif;
+    -webkit-text-fill-color: rgba(255, 255, 255, 1);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin: 100px auto;
     font-size: 4em;
@@ -125,10 +129,10 @@ button {
     border-radius: 20px;
     width: 300px;
     height: 50px;
-    margin:auto;
+    margin: auto;
     border: none;
     cursor: pointer;
-    display:block;
+    display: block;
 }
 button:hover {
     background-color: #226ca0;
@@ -153,51 +157,54 @@ button:hover {
     display: inline;
     color: red;
 }
-#contact p{
+#contact p {
     color: rgba(255, 255, 255, 0.85);
     font-size: 2rem;
     text-align: center;
 }
-#contact a{
+#contact a {
     color: #d0eef2;
 }
-h2{
+h2 {
     text-align: center;
     color: #f1f1f1;
     font-size: 2rem;
 }
-fieldset{
-    max-width:40%;
-    margin:  auto;
-    padding:  20px 50px;
+fieldset {
+    max-width: 40%;
+    margin: auto;
+    padding: 20px 50px;
     border-radius: 20px;
 }
-input[type=text] {  
+input[type=text] {
     text-align: left;
-    width: 100%;  
-    padding: 15px;  
-    margin: 5px 0 22px 0;  
-    display: inline-block;  
-    border: none;  
-    background: #f1f1f1; 
-    border-radius: 20px; 
-}  
-input[type=text]:focus {  
-  outline: none;  
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 20px;
 }
-.submit{
+input[type=text]:focus {
+    outline: none;
+}
+.submit {
     text-align: center;
     margin: auto;
-}  
-input[type=submit]{
+}
+input[type=submit] {
     padding: 15px 50px;
     font-size: 1.5rem;
     border-radius: 20px;
     background-color: #0c1e3f;
     color: #d0eef2;
+    border: none;
+    cursor: pointer;
 }
-.input[type=submit]:hover{
+input[type=submit]:hover {
     background-color: #d0eef2;
+    color: #0c1e3f;
 }
 .icons {
     display: flex;
@@ -218,7 +225,7 @@ input[type=submit]{
     padding: 10px;
     border: 2px solid blue;
     border-radius: 50%;
-    width:25px;
+    width: 25px;
     height: 25px;
     margin-right: 8px;
     justify-content: center;
@@ -234,7 +241,7 @@ footer {
     padding: 20px;
     color: rgba(255, 255, 255, 0.85);
 }
-footer a{
+footer a {
     color: #87cefa;
     text-decoration: none;
 }
@@ -250,6 +257,7 @@ footer a{
 #copyright {
     font-size: 1.5rem;
     margin-top: 20px;
+    color: #d0eef2;
 }
 @media (max-width: 768px) {
     .navbar ul {
@@ -262,7 +270,7 @@ footer a{
         cursor: pointer;
         margin-right: 20px;
     }
-    .navbar .toggle-button .bar{
+    .navbar .toggle-button .bar {
         margin-top: 5px;
     }
 
@@ -285,15 +293,14 @@ footer a{
         display: grid;
         place-items: center;
         max-width: 100%;
-        max-width: 100%;
     }
     button {
         font-size: 1.5rem;
         max-width: 300px;
         margin: auto;
         display: block;
-        position:relative;
-        top:25%;
+        position: relative;
+        top: 25%;
     }
     #about-us {
         font-size: 1.5rem;
@@ -302,22 +309,51 @@ footer a{
     }
     footer {
         font-size: 1.5rem;
-      }
+    }
+    #copyright {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        color: #d0eef2;
+    }
 }
-@media (max-width:1020px) and(min-width:768px){
-    image{
+@media (max-width: 320px) {
+    h1{
+        font-size: 2rem;
+    }
+    .icons {
+        flex-direction: row;
+        align-items: center;
+    }
+    .icons a {
+        margin: 10px 0;
+    }
+    .icons a i {
+        font-size: 1.2rem;
+        padding: 8px;
+        width: 20px;
+        height: 20px;
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    button{
+        max-width: 60%;
+    }
+    #contact p{
+        font-size: large;
+    }
+}
+@media (max-width: 1020px) and (min-width: 768px) {
+    .image {
         position: absolute;
         right: 5%;
         margin: 10px auto;
         display: grid;
         place-items: center;
         max-width: 100%;
-        max-width: 100%;
     }
-    button{
+    button {
         position: absolute;
         top: 50%;
     }
 }
-
-    
