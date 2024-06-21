@@ -315,8 +315,30 @@ footer a {
         margin-top: 10px;
         color: #d0eef2;
     }
+    .icons {
+        flex-direction: row;
+        align-items: center;
+    }
+    .icons a {
+        margin: 10px 0;
+    }
+    .icons a i {
+        font-size: 1.2rem;
+        padding: 8px;
+        width: 20px;
+        height: 20px;
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    button{
+        max-width: 60%;
+    }
+    #contact p{
+        font-size: large;
+    }
 }
-@media (max-width: 320px) {
+@media (max-width: 320px)  {
     h1{
         font-size: 2rem;
     }
