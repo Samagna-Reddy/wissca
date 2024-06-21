@@ -34,7 +34,7 @@
                  <li><a href="#about-us">About</a></li>
                  <li><a href="#">Responsibilities</a></li>
                  <li><a href="#">Incentives</a></li>
-                 <li><a href="#">Contact</a></li>
+                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -46,10 +46,10 @@
         Ambassador
         <br>
     </h1>
+    <div><button>Register &#11166</button></div>
     <div class="bar">
         <img src="./file (1).png" alt="" class="image">
     </div>
-    <button>Register &#11166</button>
     <div id="about-us">
         <div id="About">About</div>
         Us
@@ -62,5 +62,41 @@
             the most awaited fests in Eastern India.
         </p>
     </div>
+    <div id="contact">
+        <p>For more information <a href="#">click here</a></p>
+        <fieldset>
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+            <input type="text" placeholder="Your Phone Number">
+            <input type="text" placeholder="Your Message">
+            <div class="submit"><input type="submit" value="Submit"></div>
+        </fieldset>
+    </div>
+    <footer>
+        FOR MORE INFORMATION CONTACT
+        <br>
+        <div class="name">Sai Prajwal- <div class="number">9182654934</div></div>
+        <div class="name">Phanindra- <div class="number">6303385055</div></div>
+        For further information visit our website
+        <br>
+        <a href="https://www.wissenaire.org" id="link">&#11162 Wissenaire.org &#11160</a>
+        <br>
+         Follow us on
+        <br>
+        <div class="icons">
+          <a href="https://www.facebook.com/wissenaireiitbbs/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/wissenaire.iitbbs/p/C4VMz4EoyDu/?locale=French"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/wissiitbbs/status/1763980362198421706"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://in.linkedin.com/company/wissenaireiitbbs"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div id="copyright">&#169; 2024 All Rights Reserved By Wissenaire </div>
+    </footer>
+    <script>
+        document.querySelector('.toggle-button').addEventListener('click', function () {
+            document.querySelector('.navbar ul').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
