@@ -66,9 +66,9 @@
         <p>For more information <a href="#">click here</a></p>
         <fieldset>
             <h2>Contact Us</h2>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Email">
-            <input type="text" placeholder="Your Phone Number">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone Number" pattern="[0-9]{10}" maxlength="10" required>
             <input type="text" placeholder="Your Message">
             <div class="submit"><input type="submit" value="Submit"></div>
         </fieldset>
