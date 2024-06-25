@@ -279,6 +279,7 @@ footer {
 
     .navbar ul.active {
         display: flex;
+        position:fixed;
     }
 
     h1 {
